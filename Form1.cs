@@ -6,5 +6,15 @@ namespace Win_Form_App
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Result.Text = "QC Approved";
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Result.Text = "QC Rejected";
+        }
     }
 }

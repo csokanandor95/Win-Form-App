@@ -37,6 +37,7 @@
             button2 = new Button();
             checkBox4 = new CheckBox();
             checkBox5 = new CheckBox();
+            Result = new TextBox();
             SuspendLayout();
             // 
             // checkBox1
@@ -97,6 +98,7 @@
             button1.TabIndex = 5;
             button1.Text = "Approve";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // button2
             // 
@@ -106,6 +108,7 @@
             button2.TabIndex = 6;
             button2.Text = "Reject";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // checkBox4
             // 
@@ -127,11 +130,19 @@
             checkBox5.Text = "checkBox5";
             checkBox5.UseVisualStyleBackColor = true;
             // 
+            // Result
+            // 
+            Result.Location = new Point(297, 100);
+            Result.Name = "Result";
+            Result.Size = new Size(196, 27);
+            Result.TabIndex = 9;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(609, 331);
+            Controls.Add(Result);
             Controls.Add(checkBox5);
             Controls.Add(checkBox4);
             Controls.Add(button2);
@@ -158,5 +169,6 @@
         private Button button2;
         private CheckBox checkBox4;
         private CheckBox checkBox5;
+        private TextBox Result;
     }
 }
