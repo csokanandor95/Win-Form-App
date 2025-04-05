@@ -35,6 +35,8 @@
             listBox1 = new ListBox();
             button1 = new Button();
             button2 = new Button();
+            checkBox4 = new CheckBox();
+            checkBox5 = new CheckBox();
             SuspendLayout();
             // 
             // checkBox1
@@ -69,10 +71,14 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(368, 25);
+            textBox1.BackColor = SystemColors.Info;
+            textBox1.BorderStyle = BorderStyle.None;
+            textBox1.Location = new Point(297, 25);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(125, 27);
+            textBox1.Size = new Size(196, 20);
             textBox1.TabIndex = 3;
+            textBox1.Text = "QC checklist";
+            textBox1.TextAlign = HorizontalAlignment.Center;
             // 
             // listBox1
             // 
@@ -100,11 +106,33 @@
             button2.Text = "button2";
             button2.UseVisualStyleBackColor = true;
             // 
+            // checkBox4
+            // 
+            checkBox4.AutoSize = true;
+            checkBox4.Location = new Point(53, 190);
+            checkBox4.Name = "checkBox4";
+            checkBox4.Size = new Size(101, 24);
+            checkBox4.TabIndex = 7;
+            checkBox4.Text = "checkBox4";
+            checkBox4.UseVisualStyleBackColor = true;
+            // 
+            // checkBox5
+            // 
+            checkBox5.AutoSize = true;
+            checkBox5.Location = new Point(53, 220);
+            checkBox5.Name = "checkBox5";
+            checkBox5.Size = new Size(101, 24);
+            checkBox5.TabIndex = 8;
+            checkBox5.Text = "checkBox5";
+            checkBox5.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(609, 331);
+            Controls.Add(checkBox5);
+            Controls.Add(checkBox4);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(listBox1);
@@ -127,5 +155,7 @@
         private ListBox listBox1;
         private Button button1;
         private Button button2;
+        private CheckBox checkBox4;
+        private CheckBox checkBox5;
     }
 }
