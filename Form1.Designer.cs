@@ -32,7 +32,7 @@
             checkBox2 = new CheckBox();
             checkBox3 = new CheckBox();
             textBox1 = new TextBox();
-            Assay = new ListBox();
+            Assay = new ComboBox();
             button1 = new Button();
             button2 = new Button();
             checkBox4 = new CheckBox();
@@ -84,12 +84,13 @@
             // 
             // Assay
             // 
-            Assay.BorderStyle = BorderStyle.FixedSingle;
+            Assay = new ComboBox();
+            Assay.DropDownStyle = ComboBoxStyle.DropDownList;
             Assay.FormattingEnabled = true;
             Assay.Items.AddRange(new object[] { "Solubility", "Cell viability", "Substrate", "Inhibition" });
             Assay.Location = new Point(53, 56);
             Assay.Name = "Assay";
-            Assay.Size = new Size(150, 22);
+            Assay.Size = new Size(150, 28);
             Assay.TabIndex = 4;
             // 
             // button1
@@ -174,7 +175,7 @@
         private CheckBox checkBox2;
         private CheckBox checkBox3;
         private TextBox textBox1;
-        private ListBox Assay;
+        private ComboBox Assay;
         private Button button1;
         private Button button2;
         private CheckBox checkBox4;
