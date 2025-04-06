@@ -25,6 +25,17 @@ namespace Win_Form_App
 
         private void Assay_SelectedIndexChanged(object sender, EventArgs e)
         {
+            bool validSelection = Assay.SelectedIndex > 0;
+
+            //akkor valid a checkbox ha tényleges assay-t választottunk
+
+            checkBox1.Enabled = validSelection;
+            checkBox2.Enabled = validSelection;
+            checkBox3.Enabled = validSelection;
+            checkBox4.Enabled = validSelection;
+            checkBox5.Enabled = validSelection;
+
+            //checkbox értékek törlése (ha elõzõleg be volt pipálva)
             checkBox1.Checked = false;
             checkBox2.Checked = false;
             checkBox3.Checked = false;
@@ -38,6 +49,11 @@ namespace Win_Form_App
         private void button1_Click(object sender, EventArgs e) //eseménykezelõ metódus
         {
             Result.Text = "QC Approved";
+            checkBox1.Enabled = false;
+            checkBox2.Enabled = false;
+            checkBox3.Enabled = false;
+            checkBox4.Enabled = false;
+            checkBox5.Enabled = false;
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -71,6 +87,14 @@ namespace Win_Form_App
         {
             Assay.SelectedText = "Select an assay type!";
             Assay.SelectedIndex = 0;
+
+            //kezdetben legyen mindegyik checkbox inakítv
+
+            checkBox1.Enabled = false;
+            checkBox2.Enabled = false;
+            checkBox3.Enabled = false;
+            checkBox4.Enabled = false;
+            checkBox5.Enabled = false;
         }
     }
 }
