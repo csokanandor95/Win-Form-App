@@ -73,11 +73,12 @@
             // 
             // textBox1
             // 
-            textBox1.BackColor = SystemColors.Info;
+            textBox1.BackColor = SystemColors.GradientActiveCaption;
             textBox1.BorderStyle = BorderStyle.None;
-            textBox1.Location = new Point(297, 25);
+            textBox1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 238);
+            textBox1.Location = new Point(195, 12);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(196, 20);
+            textBox1.Size = new Size(196, 27);
             textBox1.TabIndex = 3;
             textBox1.Text = "QC checklist";
             textBox1.TextAlign = HorizontalAlignment.Center;
@@ -94,17 +95,18 @@
             // 
             // button1
             // 
-            button1.Location = new Point(297, 212);
+            button1.BackColor = SystemColors.ButtonHighlight;
+            button1.Location = new Point(316, 217);
             button1.Name = "button1";
             button1.Size = new Size(94, 29);
             button1.TabIndex = 5;
             button1.Text = "Approve";
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
             // button2
             // 
-            button2.Location = new Point(399, 212);
+            button2.Location = new Point(418, 217);
             button2.Name = "button2";
             button2.Size = new Size(94, 29);
             button2.TabIndex = 6;
@@ -134,23 +136,25 @@
             // 
             // Result
             // 
-            Result.Location = new Point(297, 100);
+            Result.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 238);
+            Result.Location = new Point(316, 90);
             Result.Name = "Result";
-            Result.Size = new Size(196, 27);
+            Result.Size = new Size(196, 34);
             Result.TabIndex = 9;
             // 
             // dateTimePicker1
             // 
-            dateTimePicker1.Location = new Point(297, 133);
+            dateTimePicker1.Font = new Font("Segoe UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 238);
+            dateTimePicker1.Location = new Point(292, 143);
             dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(196, 27);
+            dateTimePicker1.Size = new Size(255, 25);
             dateTimePicker1.TabIndex = 10;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(609, 331);
+            ClientSize = new Size(609, 281);
             Controls.Add(dateTimePicker1);
             Controls.Add(Result);
             Controls.Add(checkBox5);
