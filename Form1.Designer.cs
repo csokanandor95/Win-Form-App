@@ -86,10 +86,10 @@
             // 
             Assay.DropDownStyle = ComboBoxStyle.DropDownList;
             Assay.FormattingEnabled = true;
-            Assay.Items.AddRange(new object[] { "Solubility", "Cell viability", "Substrate", "Inhibition" });
+            Assay.Items.AddRange(new object[] { "Select an assay type!", "Solubility", "Cell viability", "Substrate", "Inhibition" });
             Assay.Location = new Point(53, 56);
             Assay.Name = "Assay";
-            Assay.Size = new Size(150, 28);
+            Assay.Size = new Size(205, 28);
             Assay.TabIndex = 4;
             // 
             // button1
@@ -141,9 +141,9 @@
             // 
             // dateTimePicker1
             // 
-            dateTimePicker1.Location = new Point(269, 133);
+            dateTimePicker1.Location = new Point(297, 133);
             dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(250, 27);
+            dateTimePicker1.Size = new Size(196, 27);
             dateTimePicker1.TabIndex = 10;
             // 
             // Form1

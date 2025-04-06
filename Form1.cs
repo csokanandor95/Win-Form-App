@@ -20,6 +20,7 @@ namespace Win_Form_App
             button2.Enabled = true;
 
             UpdateButtons(); //kezdeti állapot beállítása
+            AssayInitialize(); //kezdeti szöveg megadása
         }
 
         private void Assay_SelectedIndexChanged(object sender, EventArgs e)
@@ -66,5 +67,10 @@ namespace Win_Form_App
             Result.Text = "Under QC";
         }
 
+        private void AssayInitialize()
+        {
+            Assay.SelectedText = "Select an assay type!";
+            Assay.SelectedIndex = 0;
+        }
     }
 }
