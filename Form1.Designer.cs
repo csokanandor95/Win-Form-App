@@ -46,9 +46,9 @@
             checkBox1.AutoSize = true;
             checkBox1.Location = new Point(53, 100);
             checkBox1.Name = "checkBox1";
-            checkBox1.Size = new Size(101, 24);
+            checkBox1.Size = new Size(174, 24);
             checkBox1.TabIndex = 0;
-            checkBox1.Text = "checkBox1";
+            checkBox1.Text = "Compound measured";
             checkBox1.UseVisualStyleBackColor = true;
             // 
             // checkBox2
@@ -56,9 +56,9 @@
             checkBox2.AutoSize = true;
             checkBox2.Location = new Point(53, 130);
             checkBox2.Name = "checkBox2";
-            checkBox2.Size = new Size(101, 24);
+            checkBox2.Size = new Size(121, 24);
             checkBox2.TabIndex = 1;
-            checkBox2.Text = "checkBox2";
+            checkBox2.Text = "Protocol read";
             checkBox2.UseVisualStyleBackColor = true;
             // 
             // checkBox3
@@ -66,9 +66,9 @@
             checkBox3.AutoSize = true;
             checkBox3.Location = new Point(53, 160);
             checkBox3.Name = "checkBox3";
-            checkBox3.Size = new Size(101, 24);
+            checkBox3.Size = new Size(145, 24);
             checkBox3.TabIndex = 2;
-            checkBox3.Text = "checkBox3";
+            checkBox3.Text = "Lab book printed";
             checkBox3.UseVisualStyleBackColor = true;
             // 
             // textBox1
@@ -84,7 +84,6 @@
             // 
             // Assay
             // 
-            Assay = new ComboBox();
             Assay.DropDownStyle = ComboBoxStyle.DropDownList;
             Assay.FormattingEnabled = true;
             Assay.Items.AddRange(new object[] { "Solubility", "Cell viability", "Substrate", "Inhibition" });
@@ -118,9 +117,9 @@
             checkBox4.AutoSize = true;
             checkBox4.Location = new Point(53, 190);
             checkBox4.Name = "checkBox4";
-            checkBox4.Size = new Size(101, 24);
+            checkBox4.Size = new Size(143, 24);
             checkBox4.TabIndex = 7;
-            checkBox4.Text = "checkBox4";
+            checkBox4.Text = "Steps completed";
             checkBox4.UseVisualStyleBackColor = true;
             // 
             // checkBox5
@@ -128,9 +127,9 @@
             checkBox5.AutoSize = true;
             checkBox5.Location = new Point(53, 220);
             checkBox5.Name = "checkBox5";
-            checkBox5.Size = new Size(101, 24);
+            checkBox5.Size = new Size(146, 24);
             checkBox5.TabIndex = 8;
-            checkBox5.Text = "checkBox5";
+            checkBox5.Text = "Results evaluated";
             checkBox5.UseVisualStyleBackColor = true;
             // 
             // Result
