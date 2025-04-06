@@ -38,6 +38,7 @@
             checkBox4 = new CheckBox();
             checkBox5 = new CheckBox();
             Result = new TextBox();
+            dateTimePicker1 = new DateTimePicker();
             SuspendLayout();
             // 
             // checkBox1
@@ -85,6 +86,7 @@
             // 
             Assay.BorderStyle = BorderStyle.FixedSingle;
             Assay.FormattingEnabled = true;
+            Assay.Items.AddRange(new object[] { "Solubility", "Cell viability", "Substrate", "Inhibition" });
             Assay.Location = new Point(53, 56);
             Assay.Name = "Assay";
             Assay.Size = new Size(150, 22);
@@ -137,11 +139,19 @@
             Result.Size = new Size(196, 27);
             Result.TabIndex = 9;
             // 
+            // dateTimePicker1
+            // 
+            dateTimePicker1.Location = new Point(269, 133);
+            dateTimePicker1.Name = "dateTimePicker1";
+            dateTimePicker1.Size = new Size(250, 27);
+            dateTimePicker1.TabIndex = 10;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(609, 331);
+            Controls.Add(dateTimePicker1);
             Controls.Add(Result);
             Controls.Add(checkBox5);
             Controls.Add(checkBox4);
@@ -170,5 +180,6 @@
         private CheckBox checkBox4;
         private CheckBox checkBox5;
         private TextBox Result;
+        private DateTimePicker dateTimePicker1;
     }
 }
