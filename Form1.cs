@@ -49,6 +49,7 @@ namespace Win_Form_App
         private void button1_Click(object sender, EventArgs e) //eseménykezelõ metódus
         {
             Result.Text = "QC Approved";
+            Result.BackColor = Color.LightGreen; // approved
             checkBox1.Enabled = false;
             checkBox2.Enabled = false;
             checkBox3.Enabled = false;
@@ -59,6 +60,7 @@ namespace Win_Form_App
         private void button2_Click(object sender, EventArgs e)
         {
             Result.Text = "QC Rejected";
+            Result.BackColor = Color.LightCoral; // rejected
         }
 
         private void CheckBoxes_CheckedChanged(object sender, EventArgs e)
